@@ -29,10 +29,13 @@ const Header = () => {
         <section className="flex flex-wrap justify-evenly">
           <img src="./images/Logo.png" alt="Logo" className="w-24" />
 
-          {contactDetails.map((details) => {
+          {contactDetails.map((details, index) => {
             return (
               <>
-                <div className="flex items-center justify-between gap-4 p-2">
+                <div
+                  key={index}
+                  className="flex items-center justify-between gap-4 p-2"
+                >
                   {details.img}
                   <div>
                     <p className="text-sm pb-2">{details.text1}</p>
