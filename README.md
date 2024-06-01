@@ -1,8 +1,24 @@
-# React + Vite
+# Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a landing page project built using React.js and Tailwind CSS. It includes a carousel implemented with React Slick and smooth scrolling functionality using React Scroll.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Carousel slider showcasing key features or content.
+- Smooth scrolling navigation to different sections of the page.
+- Responsive design using Tailwind CSS for mobile, tablet, and desktop devices.
+
+## Technologies Used
+
+- React.js
+- Tailwind CSS
+- React Slick (for carousel)
+- React Scroll (for smooth scrolling)
+
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   ```
