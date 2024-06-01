@@ -20,5 +20,5 @@ This is a landing page project built using React.js and Tailwind CSS. It include
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/rednet09/aafiyamedicare
    ```
