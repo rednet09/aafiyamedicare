@@ -4,6 +4,7 @@ import { IoMailOpenOutline } from "react-icons/io5";
 import { FaGreaterThan } from "react-icons/fa";
 import Navbar from "./Navbar";
 import Button from "./Button";
+
 const Header = () => {
   const contactDetails = [
     {
@@ -26,32 +27,29 @@ const Header = () => {
   return (
     <>
       <header className="mx-auto">
-        <section className="flex flex-wrap justify-evenly">
-          <img src="./images/Logo.png" alt="Logo" className="w-24" />
-
-          {contactDetails.map((details, index) => {
-            return (
-              <>
-                <div
-                  key={index}
-                  className="flex items-center justify-between gap-4 p-2"
-                >
-                  {details.img}
-                  <div>
-                    <p className="text-sm pb-2">{details.text1}</p>
-                    <p className="text-sm font-bold text-left">
-                      {details.text2}
-                    </p>
-                  </div>
-                </div>
-              </>
-            );
-          })}
+        <section className="flex flex-wrap justify-between items-center p-4">
+          <img
+            src="./images/Logo.png"
+            alt="Logo"
+            className="w-24 mb-2 md:mb-0"
+          />
+          {contactDetails.map((details, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-between gap-4 p-2"
+            >
+              {details.img}
+              <div className="text-left">
+                <p className="text-sm pb-2">{details.text1}</p>
+                <p className="text-sm font-bold">{details.text2}</p>
+              </div>
+            </div>
+          ))}
         </section>
         <Navbar />
         <section className="bg-[url('./images/knee.webp')] bg-cover bg-center bg-no-repeat w-full h-[250px] ">
-          <div className="mx-28 py-5">
-            <ul className="flex gap-4 text-white font-bold items-center pb-6">
+          <div className="mx-4 md:mx-28 py-5">
+            <ul className="flex gap-2 md:gap-4 text-white font-bold items-center pb-6 text-xs md:text-base">
               <li>Home</li>
               <FaGreaterThan color="red" />
               <li>Treatments</li>
@@ -60,10 +58,10 @@ const Header = () => {
               <FaGreaterThan color="red" />
               <li>Knee replacement</li>
             </ul>
-            <h2 className="text-2xl font-bold text-white pb-2">
+            <h2 className="text-xl md:text-2xl font-bold text-white pb-2">
               Total Knee Replacement
             </h2>
-            <h3 className="text-xl font-semibold text-white w-2/4">
+            <h3 className="text-base md:text-xl font-semibold text-white w-full md:w-2/4">
               Total knee replacement is a surgery to remove and replace the
               whole damaged knee joint
             </h3>

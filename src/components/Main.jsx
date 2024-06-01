@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import { Link, Element } from "react-scroll";
+import MainNavigation from "./MainNavigation";
 
 const Main = () => {
   // const [activeSection, setActiveSection] = useState("overview");
@@ -405,8 +406,8 @@ const Main = () => {
           </section>
         </div>
       </section> */}
-      <div className="container mx-auto px-20 py-8">
-        <nav className="flex justify-center space-x-4 mb-8">
+      <div className="container mx-auto px-10 md:px-20 py-8">
+        {/* <nav className="flex justify-center space-x-4 mb-8">
           <Link
             to="overview"
             smooth={true}
@@ -471,8 +472,8 @@ const Main = () => {
           >
             Patient Stories & Videos
           </Link>
-        </nav>
-
+        </nav> */}
+        <MainNavigation />
         <Element name="overview">
           <section className="mb-8 grid grid-cols-1 md:grid-cols-2 gap-8 border-dotted border-b-2 border-sky-500">
             <div className="p-4">
